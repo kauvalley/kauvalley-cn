@@ -1,4 +1,4 @@
-var kauValley = angular.module('kauValley', []);
+var kauValley = angular.module('kauValley', ['angular-flexslider']);
 
 kauValley.controller('kauValleyController', function kauValleyController($scope, $sce) {
     $scope.contact = {
@@ -28,7 +28,7 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
             'url': '#'
         }],
         'newsletter': $sce.trustAsResourceUrl('https://kauvalley.us14.list-manage.com/subscribe/post?u=5de61ced44fd7591a4cff1bca&amp;id=e6d5600c22'),
-        'leavemessage': $sce.trustAsResourceUrl('https://formspree.io/info@kauvalley.com')
+        'leaveamessage': $sce.trustAsResourceUrl('https://formspree.io/info@kauvalley.com')
     };
     $scope.gallery = [
         'images/0.jpg',
@@ -115,7 +115,3 @@ $('ul.nav li.dropdown').hover(
         $('.dropdown-toggle').dropdown('toggle');
     }
 );
-
-$(".loading").fadeOut(4000, function() {
-    $(this).remove();
-});
