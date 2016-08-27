@@ -1,6 +1,6 @@
 var kauValley = angular.module('kauValley', ['angular-flexslider']);
 
-kauValley.controller('kauValleyController', function kauValleyController($scope) {
+kauValley.controller('kauValleyController', function kauValleyController($scope,$sce) {
     $scope.gallery = [
         'images/0.jpg',
         'images/1.jpg',
