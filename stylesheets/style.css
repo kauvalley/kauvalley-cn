@@ -8,7 +8,8 @@ p,
 .navbar,
 li,
 a,
-form {
+form,
+table {
     font-family: 'Cormorant Infant', serif;
 }
 h1 {
@@ -310,4 +311,8 @@ a.social-icon {
 .index-nav .navbar-brand {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+.table>tbody>tr>td{
+    border-top: none;
 }
