@@ -19,13 +19,22 @@
 </head>
 
 <body class="animated fadeIn" ng-controller="kauValleyController">
-    <div class="navbar navbar-default index-nav" data-spy="affix" data-offset-top="800">
-        <div class="container-fluid" style="min-height:850px;">
-            <div class="background-img" style="position:absolute;left:0;right:0;top:0;bottom:0;background-image: url('images/0.jpg');background-size: cover;background-position: center top;">
+    <div class="loading" style="position:fixed;height:100vh;width:100%;background-image: url('images/0blur.jpg');background-size: cover;background-position: center top;z-index:100;transition-duration:2s;">
+        <div class="animated fadeIn" style="padding-top:15px;margin-top:30vh;height: 150px;display: inline-block;width:100%;text-align:center;transition-duration:2s;">
+            <img class="img-responsive" style="height:100%;margin:auto;" src='images/KauValley-Logo-white.png'>
+
+            <div class="progress" style="width:40%;margin:auto;">
+                <div class="indeterminate"></div>
             </div>
-            <div class="row" style="height:800px;">
-                <div class="navbar-brand animated fadeIn" style="position:fixed;top:120px;">
-                    <a href="index.html"><img style="margin:auto;filter:brightness(0%);-webkit-filter:brightness(0%);" src='images/KauValley-Logo.png'>
+        </div>
+    </div>
+
+
+    <div class="navbar navbar-default navbar-index">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-brand">
+                    <a href="index.html"><img class="img-responsive" style="margin:auto;" src='images/KauValley-Logo-white.png'>
                     </a>
                 </div>
             </div>
@@ -71,7 +80,9 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top:0;">
+        <div style="height:100vh;margin-left:-20px;margin-right:-20px;background-image: url('images/0.jpg');background-size: cover;background-position: center top;">
+        </div>
 
         <div class="row"></div>
 
@@ -91,11 +102,12 @@
             </div>
         </div>
 
+        
         <div class="row">
             <hr>
         </div>
         <div class="row fence">
-            <div class="col-sm-4 fence-item index-img" style="height:50vh;background-image: url('images/2.jpg');background-size:cover;background-position:center center;">
+            <div class="col-sm-4 fence-item img-text" style="height:50vh;background-image: url('images/2.jpg');background-size:cover;background-position:center center;">
                 <div class="row" style="height:30%;"></div>
                 <div class="row">
                     <h1 class="center">Title One</h1>
@@ -113,7 +125,7 @@
             </div>
 
 
-            <div class="col-sm-4 fence-item index-img" style="height:50vh;background-image: url('images/3.jpg');background-size:cover;background-position:center center;">
+            <div class="col-sm-4 fence-item img-text" style="height:50vh;background-image: url('images/3.jpg');background-size:cover;background-position:center center;">
                 <div class="row" style="height:30%;"></div>
                 <div class="row">
                     <h1 class="center">Title One</h1>
@@ -131,7 +143,7 @@
             </div>
 
 
-            <div class="col-sm-4 fence-item index-img" style="height:50vh;background-image: url('images/4.jpg');background-size:cover;background-position:center center;">
+            <div class="col-sm-4 fence-item img-text" style="height:50vh;background-image: url('images/4.jpg');background-size:cover;background-position:center center;">
                 <div class="row" style="height:30%;"></div>
                 <div class="row">
                     <h1 class="center">Title One</h1>
@@ -147,6 +159,74 @@
                     <a class="btn btn-default" href="#" role="button">More</a>
                 </div>
             </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <hr>
+        </div>
+
+        <div class="row slide">
+            <div class="col-sm-4 slide-item" style="height:50vh;background-image: url('images/2.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/3.jpg');background-size:cover;background-position:center center;">
+                </div>
+                <div class="row" style="height:30%;"></div>
+                <div class="row">
+                    <h1 class="center">Title One</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <p>
+                            The quick brown fox jumps over the lazy dog.
+                        </p>
+                    </div>
+                </div>
+                <div class="row center">
+                    <a class="btn btn-default" href="#" role="button">More</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 slide-item" style="height:50vh;background-image: url('images/4.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-down" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/5.jpg');background-size:cover;background-position:center center;">
+                </div>
+                <div class="row" style="height:30%;"></div>
+                <div class="row">
+                    <h1 class="center">Title One</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <p>
+                            The quick brown fox jumps over the lazy dog.
+                        </p>
+                    </div>
+                </div>
+                <div class="row center">
+                    <a class="btn btn-default" href="#" role="button">More</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 slide-item" style="height:50vh;background-image: url('images/6.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/0.jpg');background-size:cover;background-position:center center;">
+                </div>
+                <div class="row" style="height:30%;"></div>
+                <div class="row">
+                    <h1 class="center">Title One</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <p>
+                            The quick brown fox jumps over the lazy dog.
+                        </p>
+                    </div>
+                </div>
+                <div class="row center">
+                    <a class="btn btn-default" href="#" role="button">More</a>
+                </div>
+            </div>
+
 
         </div>
 
@@ -201,22 +281,37 @@
     <script src="javascripts/angular-flexslider.js"></script>
     <script src="javascripts/app.js"></script>
     <script>
+        $( document ).ready(function() {
+            $('body').css('overflow','hidden');
+            setTimeout(function(){
+                $('.loading>div').css('margin-top','0');
+
+                if($(window).scrollTop()>$(window).height() - 140) $('.loading>div').css('height','90px');
+                $('.loading .progress').css('opacity','0');
+            },2000);
+            setTimeout(function(){
+                $('.loading').css('opacity','0');
+                $('body').css('overflow','visible');
+            },4000);
+            setTimeout(function(){
+                $('.loading').remove();
+            },6000);
+        });
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
-            if (scroll < 552) {
-                $('.index-nav .navbar-brand').css('position', 'fixed');
-                $('.index-nav .navbar-brand').css('top', '120px');
-                $('.index-nav .navbar-brand img').css('filter', "brightness(" + scroll * 100 / 552 + "%)");
-                $('.index-nav .navbar-brand img').css('-webkit-filter', "brightness(" + Math.min(100, scroll * 150 / 552) + "%)");
-                $('.index-nav .background-img').css('opacity', 1 - 1.5 * scroll / 552);
+            if (scroll <= $(window).height() - 200) {
+                $('.navbar').addClass( "navbar-index" );
+                $('.navbar img').attr('src','images/KauValley-Logo-white.png');
             } else {
-                $('.index-nav .navbar-brand').css('position', 'absolute');
-                $('.index-nav .navbar-brand').css('top', '672px');
-                $('.index-nav .navbar-brand img').css('filter', "brightness(100%)");
-                $('.index-nav .navbar-brand img').css('-webkit-filter', "brightness(100%)");
-                $('.index-nav .background-img').css('opacity', 0);
+                $('.navbar.navbar-index').removeClass( "navbar-index" );
+                $('.navbar img').attr('src','images/KauValley-Logo.png');
             }
 
+            if (scroll <= $(window).height() - 140) {
+                $('.navbar-brand.sm').removeClass( "sm" );
+            } else {
+                $('.navbar-brand').addClass( "sm" );
+            }
         });
     </script>
 </body>

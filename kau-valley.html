@@ -19,7 +19,7 @@
 </head>
 
 <body class="animated fadeIn" ng-controller="kauValleyController">
-    <div class="navbar navbar-default" data-spy="affix" data-offset-top="150">
+    <div class="navbar navbar-default">
         <div class="container-fluid">
             <div class="row">
                 <div class="navbar-brand">
@@ -196,7 +196,7 @@
             </div>
         </div>
 
-
+        
 
     </div>
 
@@ -247,6 +247,17 @@
     <script src="javascripts/jquery.flexslider-min.js"></script>
     <script src="javascripts/angular-flexslider.js"></script>
     <script src="javascripts/app.js"></script>
+    <script>
+        $(window).scroll(function(event) {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 60) {
+                $('.navbar-brand.sm').removeClass( "sm" );
+            } else {
+                $('.navbar-brand').addClass( "sm" );
+            }
+
+        });
+    </script>
 </body>
 
 </html>
