@@ -20,7 +20,7 @@
 
 <body class="animated fadeIn" ng-controller="kauValleyController">
     <div class="loading" style="position:fixed;height:100vh;width:100%;background-image: url('images/0blur.jpg');background-size: cover;background-position: center top;z-index:100;transition-duration:2s;">
-        <div class="animated fadeIn" style="padding-top:15px;margin-top:30vh;height: 150px;display: inline-block;width:100%;text-align:center;transition-duration:2s;">
+        <div class="animated fadeIn" style="padding-top:15px;margin-top:30vh;height:150px;display:inline-block;width:100%;text-align:center;transition-duration:2s;">
             <img class="img-responsive" style="height:100%;margin:auto;" src='images/KauValley-Logo-white.png'>
 
             <div class="progress" style="width:40%;margin:auto;">
@@ -54,13 +54,13 @@
                         <li><a href="kau-valley.html">Kau Valley</a>
                         </li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agriculture</a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" onclick="window.location='agriculture.html';">Agriculture</a>
                             <ul class="dropdown-menu">
-                                <li><a href="agriculture.html">Overview</a>
+                                <li><a href="agriculture.html#kau-coffee">Kau Coffee</a>
                                 </li>
-                                <li><a href="kau-coffee.html">- Kau Coffee</a>
+                                <li><a href="agriculture.html#tea">Tea</a>
                                 </li>
-                                <li><a href="tea.html">- Tea</a>
+                                <li><a href="agriculture.html#orchard">Orchard</a>
                                 </li>
                             </ul>
                         </li>
@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="padding-top:0;">
+    <div class="container-fluid" style="padding-top:0;overflow-x:hidden;">
         <div style="height:100vh;margin-left:-20px;margin-right:-20px;background-image: url('images/0.jpg');background-size: cover;background-position: center top;">
         </div>
 
@@ -281,11 +281,12 @@
     <script src="javascripts/angular-flexslider.js"></script>
     <script src="javascripts/app.js"></script>
     <script>
-        $( document ).ready(function() {
+        $(document).ready(function() {
             $('body').css('overflow','hidden');
+        });
+        window.onload = function(){
             setTimeout(function(){
                 $('.loading>div').css('margin-top','0');
-
                 if($(window).scrollTop()>$(window).height() - 140) $('.loading>div').css('height','90px');
                 $('.loading .progress').css('opacity','0');
             },2000);
@@ -296,7 +297,7 @@
             setTimeout(function(){
                 $('.loading').remove();
             },6000);
-        });
+        };
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
             if (scroll <= $(window).height() - 200) {

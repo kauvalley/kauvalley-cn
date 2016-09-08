@@ -6,25 +6,25 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
         'phone': '1 (234) 567-8900',
         'email': 'info@kauvalley.com',
         'links': [{
-            name: 'facebook',
+            'name': 'facebook',
             'url': '#'
         }, {
-            name: 'twitter',
+            'name': 'twitter',
             'url': '#'
         }, {
-            name: 'youtube',
+            'name': 'youtube',
             'url': '#'
         }, {
-            name: 'instagram',
+            'name': 'instagram',
             'url': '#'
         }, {
-            name: 'linkedin',
+            'name': 'linkedin',
             'url': '#'
         }, {
-            name: 'weixin',
+            'name': 'weixin',
             'url': '#'
         }, {
-            name: 'weibo',
+            'name': 'weibo',
             'url': '#'
         }],
         'newsletter': $sce.trustAsResourceUrl('https://kauvalley.us14.list-manage.com/subscribe/post?u=5de61ced44fd7591a4cff1bca&amp;id=e6d5600c22'),
@@ -43,48 +43,55 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
     $scope.bosses = [{
         'name': 'Lei LI',
         'title': 'CEO',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Lei LI',
         'title': 'CEO',
-        'url': 'images/profile.jpg'
-    }, {
-        'name': 'Lei LI',
-        'title': 'CEO',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }];
+
     $scope.leaders = [{
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }, {
         'name': 'Meimei HAN',
         'title': 'Manager',
-        'url': 'images/profile.jpg'
+        'url': 'images/profile.jpg',
+        'detail':'blablabla'
     }];
 });
 

@@ -4,8 +4,16 @@
     font-weight: 400;
     src: local('Cormorant Infant'), local('CormorantInfant-Regular'), url(../fonts/Cormorant-Infant.woff) format('woff');
 }
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(../fonts/Roboto-Condensed.woff) format('woff');
+}
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 p,
-form,
 table {
     font-family: 'Cormorant Infant', serif;
 }
@@ -45,6 +53,7 @@ li.dropdown>ul.dropdown-menu {
 .navbar .navbar-brand {
     width: 100%;
     text-align: center;
+    font-variant: small-caps;
 }
 .navbar-brand {
     height: 150px;
@@ -375,4 +384,13 @@ div.loading>div{
     div.loading>div{
     padding-right: 30px;;
 }
+}
+
+#kau-coffee,
+#tea,
+#orchard { 
+    display: block;
+    position: relative;
+    top: -140px;
+    visibility: hidden;
 }
