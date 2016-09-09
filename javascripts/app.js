@@ -41,57 +41,57 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
     ];
 
     $scope.bosses = [{
-        'name': 'Lei LI',
+        'name': '李雷',
         'title': 'CEO',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Lei LI',
+        'name': '李雷',
         'title': 'CEO',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }];
 
     $scope.leaders = [{
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-        'name': 'Meimei HAN',
-        'title': 'Manager',
+        'name': '韩梅梅',
+        'title': '项目主管',
         'url': 'images/profile.jpg',
-        'detail':'blablabla'
+        'detail':'夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }];
 });
 
