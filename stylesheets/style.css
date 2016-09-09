@@ -24,14 +24,20 @@ p {
     font-size: 20px;
 }
 .navbar {
-    border-bottom: 1px solid #DEC29A;
+    border-bottom: 2px solid #7C6A55;
     margin-bottom: 0;
+    background-color: rgba(248,248,248,.95);
 }
 
 li.dropdown>ul.dropdown-menu {
-    background-color: #F8F8F8;
-    border: 1px solid #DEC29A;
+    background-color: rgba(248,248,248,.95);
+    border-width: 2px;
+    border-style: hidden outset outset outset;
+    border-color: #DEC29A;
     border-radius: 0;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    
 }
 .navbar {
     position: fixed;
@@ -96,8 +102,8 @@ li.dropdown>ul.dropdown-menu {
 }
 
 .navbar-index li.dropdown>ul.dropdown-menu {
-    background-color: transparent;
-    border: 1px solid #DEC29A;
+    background-color: rgba(255, 255, 255, .1);
+    border-style: outset;
 }
 
 hr {
