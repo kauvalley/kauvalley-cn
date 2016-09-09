@@ -219,22 +219,24 @@
             var scroll = $(window).scrollTop();
             if (scroll <= 60) {
                 $('.navbar-brand.sm').removeClass( "sm" );
+                $('.navbar-header').css('margin-top','0');
             } else {
                 $('.navbar-brand').addClass( "sm" );
+                $('.navbar-header').css('margin-top','-35px');
             }
         });
         $(document).ready(function(){
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+                }
             });
-            }
-        });
         });
     </script>
 </body>

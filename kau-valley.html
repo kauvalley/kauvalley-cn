@@ -259,10 +259,11 @@
             var scroll = $(window).scrollTop();
             if (scroll <= 60) {
                 $('.navbar-brand.sm').removeClass( "sm" );
+                $('.navbar-header').css('margin-top','0');
             } else {
                 $('.navbar-brand').addClass( "sm" );
+                $('.navbar-header').css('margin-top','-35px');
             }
-
         });
     </script>
 </body>
