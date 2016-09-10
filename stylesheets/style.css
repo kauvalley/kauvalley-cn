@@ -27,6 +27,9 @@ p {
     text-indent: 30px;
     margin-top: 20px;
 }
+a{
+    text-decoration: none !important;
+}
 .btn{
     margin-top: 20px;
 }
@@ -441,4 +444,77 @@ div.loading>div{
 }
 .carousel-control{
     margin-top:160px;
+}
+
+span.yearlist{
+    background-color:white;
+    z-index:2;
+    font-size: 20px;
+}
+span.yearlist a{
+    color:#7C6A55;
+}
+span.yearlist a:hover{
+    color:#DEC29A;
+}
+span.yearlist:not(:first-child)::before {
+    content: '∙';
+}
+.newsitemtop{
+    height:50px;
+    border-width: 2px 0 2px 2px;
+    border-left-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0))), to(#7C6A55) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0),#7C6A55) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0),#7C6A55) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0),#7C6A55) 1 100%;
+    border-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), #7C6A55) 1 100%;
+}
+.newsitembottom{
+    height:50px;
+    border-width: 2px 0 2px 2px;
+    border-left-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#7C6A55), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#7C6A55, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#7C6A55, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#7C6A55, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #7C6A55, rgba(0, 0, 0, 0)) 1 100%;
+}
+.newsitem{
+    position: relative;
+    border-left: 2px solid #7C6A55;
+    background-color: white;
+}
+.newstime{
+    text-align: center;
+}
+.newsbullet{
+    position: absolute;
+    font-size:30px;
+    color:#7C6A55;
+    left:-10px;
+    top:10px;
+    transition-duration: .5s;
+}
+.newsbullet::after{
+    content:'●';
+}
+.newsitem:hover .newsbullet{
+    color:#DEC29A;
+}
+
+@media (max-width: 768px) {
+    div.newstime{
+        text-align: left;
+    }
 }

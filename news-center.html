@@ -72,23 +72,37 @@
     </div>
 
     <div class="container-fluid">
-
-        <div class="row" style="height:60vh;background-image: url('images/office.jpg');background-size:cover;background-position:center;">
-        </div>
-
         <div class="row"></div>
+        <div class="row center">
+            <span ng-repeat="y in yearList" class="yearlist" ng-click="selectYear(y);">
+                <a ng-if="y!=year">{{y}}</a>
+                <b ng-if="y==year">{{y}}</b>
+            </span>
+        </div>
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div class="row">
-                    <h3>联系我们</h3>
+            <div class="col-sm-8 col-sm-offset-2" id="newslist" role="tablist" aria-multiselectable="false">
+                <div class="row newsitemtop"></div>
+                <div ng-repeat="n in news | filter:{year:year} | orderBy:'-date'" class="row newsitem">
+                    <span class="newsbullet"></span>
+                    <div class="col-sm-2 newstime" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{$index}}" aria-expanded="false" aria-controls="{{$index}}">
+                        <h3>{{n.year}}-{{n.date}}</h3>
+                    </div>
+                    <div class="col-sm-10 newstitle" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{$index}}" aria-expanded="false" aria-controls="{{$index}}">
+                        <h3>{{n.title}}</h3>
+                    </div>
+                    <div class="col-sm-10 col-sm-offset-2 newscontent collapse" id="{{$index}}">
+                        <p>{{n.content}}</p>
+                    </div>
                 </div>
-                <div class="row">
-                    
-                </div>
+                <div class="row newsitembottom"></div>
             </div>
         </div>
-
-
+        <div class="row center">
+            <span ng-repeat="y in yearList" class="yearlist" ng-click="selectYear(y);">
+                <a ng-if="y!=year">{{y}}</a>
+                <b ng-if="y==year">{{y}}</b>
+            </span>
+        </div>
     </div>
 
     <footer>
@@ -123,10 +137,10 @@
                     <h3>邮件订阅</h3>
                     <form class="form-inline" action="{{contact.newsletter}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div class="form-group">
-                        <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="电子邮件" required>
+                            <input class="form-control" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="电子邮件" required>
                         </div>
                         <div class="form-group">
-                        <input class="form-control" type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            <input class="form-control" type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button">
                         </div>
                     </form>
                 </div>

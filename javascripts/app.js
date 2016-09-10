@@ -1,3 +1,25 @@
+$('ul.nav li.dropdown').hover(
+    function () {
+        $('.dropdown-toggle').dropdown('toggle');
+    }
+);
+
+var getYear = function(news){
+    var maxi=0;
+    for(var i=0;i<news.length;i++){
+        maxi=Math.max(maxi,+news[i].year);
+    }
+    return maxi;
+};
+
+var getYearList = function(news){
+    var yearList=[];
+    for(var i=0;i<news.length;i++){
+        yearList.push(news[i].year);
+    }
+    return yearList.sort().filter(function(el,i,a){return i==a.indexOf(el);}).reverse();
+};
+
 var kauValley = angular.module('kauValley', ['angular-flexslider']);
 
 kauValley.controller('kauValleyController', function kauValleyController($scope, $sce, $filter) {
@@ -95,36 +117,84 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
         }];
     $scope.news = [
         {
-            'title': '新闻标题',
-            'date': '2016-9-9',
+            'title': '新闻标题新闻标题新闻标题新闻标题新闻闻标',
+            'year': '2016',
+            'date': '09-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         },
         {
-            'title': '新闻标题',
-            'date': '2016-10-9',
+            'title': '新闻标题新闻标题新闻标题新闻标题新闻标题新闻题新闻标题题',
+            'year': '2016',
+            'date': '10-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         },
         {
-            'title': '新闻标题',
-            'date': '2016-11-9',
+            'title': '新闻标题新闻标题新闻标题题新闻标题新闻新闻标题新闻标题',
+            'year': '2016',
+            'date': '11-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         },
         {
-            'title': '新闻标题',
-            'date': '2017-9-9',
+            'title': '新闻标题新闻标题新闻标题标题新闻标题',
+            'year': '2015',
+            'date': '09-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         },
         {
-            'title': '新闻标题',
-            'date': '2019-10-9',
+            'title': '新闻标题新闻标题新闻标题新闻标题新题新闻标题新闻标题',
+            'year': '2012',
+            'date': '10-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         },
         {
-            'title': '新闻标题',
-            'date': '2020-11-9',
+            'title': '新闻标题新闻标题新闻标题新闻标题新闻标题标题',
+            'year': '2013',
+            'date': '11-09',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标题新闻标题新闻闻标',
+            'year': '2016',
+            'date': '08-15',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标题新闻标题新闻标题新闻题新题',
+            'year': '2016',
+            'date': '10-19',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标标题新闻标题新闻标题',
+            'year': '2016',
+            'date': '01-29',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标题标题新闻标题',
+            'year': '2015',
+            'date': '05-09',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标题新题新闻标题新闻标题',
+            'year': '2012',
+            'date': '12-21',
+            'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
+        },
+        {
+            'title': '新闻标题新闻标题新闻标闻标题新闻标题标题',
+            'year': '2013',
+            'date': '01-09',
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }
     ];
+    
+    $scope.year=getYear($scope.news);
+    $scope.yearList=getYearList($scope.news);
+    $scope.selectYear=function(y){
+        $scope.year=y;
+    };
 });
 
 kauValley.directive('galleryDirective', function () {
@@ -147,9 +217,3 @@ kauValley.directive('galleryDirective', function () {
         });
     };
 });
-
-$('ul.nav li.dropdown').hover(
-    function () {
-        $('.dropdown-toggle').dropdown('toggle');
-    }
-);
