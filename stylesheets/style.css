@@ -430,3 +430,12 @@ div.loading>div{
     top: -140px;
     visibility: hidden;
 }
+#carousel-example-generic{
+    display: block;
+    position: relative;
+    top: -140px;
+    padding-top:140px;
+}
+.carousel-control{
+    margin-top:140px;
+}
