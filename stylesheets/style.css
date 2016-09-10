@@ -19,9 +19,13 @@ table {
 }
 h1 {
     font-style: bold;
+    text-transform: capitalize;
+    padding-top: 20px;
 }
 p {
     font-size: 20px;
+    text-indent: 40px;
+    padding-top: 30px;
 }
 .navbar {
     border-bottom: 2px solid #7C6A55;
@@ -360,25 +364,32 @@ a.social-icon {
 .slide .slide-item{
     overflow: hidden;
     color: white;
+    text-shadow: 0 0 10px black;
 }
 .slide .slide-item .btn {
     color: white;
     text-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     background-color: transparent;
 }
+.slide .slide-item .btn:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
 .slide .slide-item .slide-up{
+    z-index:2;
     top:0;
     transition-duration: 1s;
 }
 .slide .slide-item:hover .slide-up{
-    top:-300px;
+    top:-333px;
 }
 .slide .slide-item .slide-down{
+    z-index:2;
     bottom:0;
     transition-duration: 1s;
 }
 .slide .slide-item:hover .slide-down{
-    bottom:-300px;
+    bottom:-333px;
 }
 .slide .slide-item .row{
     opacity: 0;
@@ -386,6 +397,18 @@ a.social-icon {
 }
 .slide .slide-item:hover .row{
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .slide .slide-item .row{
+        opacity: 1;
+    }
+    .slide .slide-item .slide-up{
+        visibility: hidden;
+    }
+    .slide .slide-item .slide-down{
+        visibility: hidden;
+    }
 }
 
 div.loading>div{
@@ -400,7 +423,8 @@ div.loading>div{
 
 #kau-coffee,
 #tea,
-#orchard { 
+#orchard,
+#slides { 
     display: block;
     position: relative;
     top: -140px;

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>卡乌山谷 ∙ KAU VALLEY</title>
+    <title>卡乌山谷 ∙ KA`U VALLEY</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
@@ -189,7 +189,7 @@
             </div>
             <div class="row copyright" style="background-color:grey;padding-bottom:0;">
                 <div class="col-sm-10 col-sm-offset-1">
-                    © 2016 KAU VALLEY. 保留所有权利.
+                    © 2016 KA`U VALLEY. 保留所有权利.
                 </div>
             </div>
         </div>
@@ -210,19 +210,6 @@
                 $('.navbar-brand').addClass( "sm" );
                 $('.navbar-header').css('margin-top','-35px');
             }
-        });
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-                }
-            });
         });
     </script>
 </body>
