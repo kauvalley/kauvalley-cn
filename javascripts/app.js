@@ -148,31 +148,8 @@ kauValley.directive('galleryDirective', function () {
     };
 });
 
-kauValley.filter('year', function () {
-    return function (input) {
-        if (input >= 0 && input <= 999) {
-            return ("000" + input).slice(-3);
-        }
-        else return ("???");
-    }
-});
-
-
 $('ul.nav li.dropdown').hover(
     function () {
         $('.dropdown-toggle').dropdown('toggle');
     }
 );
-$(document).ready(function () {
-    $("a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
-                window.location.hash = hash;
-            });
-        }
-    });
-});
