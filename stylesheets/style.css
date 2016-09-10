@@ -453,6 +453,7 @@ span.yearlist{
 }
 span.yearlist a{
     color:#7C6A55;
+    cursor: pointer;
 }
 span.yearlist a:hover{
     color:#DEC29A;
@@ -495,24 +496,27 @@ span.yearlist:not(:first-child)::before {
     border-left: 2px solid #7C6A55;
     background-color: white;
 }
-.newstime{
-    text-align: center;
-}
 .newsbullet{
     position: absolute;
-    font-size:30px;
-    color:#7C6A55;
-    left:-10px;
-    top:10px;
+    font-size:20px;
+    left:-7px;
+    top:4px;
     transition-duration: .5s;
+    height:39px;
 }
 .newsbullet::after{
     content:'●';
 }
+.newsitem:hover .newstime,
+.newsitem:hover .newstitle,
 .newsitem:hover .newsbullet{
     color:#DEC29A;
 }
-
+.newstime,
+.newstitle,
+.newsbullet{
+    color:#7C6A55;
+}
 @media (max-width: 768px) {
     div.newstime{
         text-align: left;
