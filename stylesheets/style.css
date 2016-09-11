@@ -429,7 +429,8 @@ div.loading>div{
 
 #kau-coffee,
 #tea,
-#orchard { 
+#orchard,
+#news { 
     display: block;
     position: relative;
     top: -160px;
@@ -501,7 +502,6 @@ span.yearlist:not(:first-child)::before {
     font-size:20px;
     left:-7px;
     top:4px;
-    transition-duration: .5s;
     height:39px;
 }
 .newsbullet::after{
@@ -520,5 +520,39 @@ span.yearlist:not(:first-child)::before {
 @media (max-width: 768px) {
     div.newstime{
         text-align: left;
+    }
+}
+
+.leader-card{
+    overflow:hidden;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.leader-detail{
+    padding-top:20px;
+    padding-bottom:20px;
+    max-height:0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.leader-card:hover{
+    padding-top:19px;
+    border-right: 1px solid #7C6A55;
+    border-bottom: 1px solid #7C6A55;
+    border-left: 1px solid #DEC29A;
+    border-top: 1px solid #DEC29A;
+}
+.leader-card:hover .leader-detail{
+    max-height:500px;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .leader-detail{
+        opacity: 1;
+        max-height:500px;
+    }
+    .leader-card:hover{
+        border: none;
     }
 }

@@ -4,20 +4,20 @@ $('ul.nav li.dropdown').hover(
     }
 );
 
-var getYear = function(news){
-    var maxi=0;
-    for(var i=0;i<news.length;i++){
-        maxi=Math.max(maxi,+news[i].year);
+var getYear = function (news) {
+    var maxi = 0;
+    for (var i = 0; i < news.length; i++) {
+        maxi = Math.max(maxi, +news[i].year);
     }
     return maxi;
 };
 
-var getYearList = function(news){
-    var yearList=[];
-    for(var i=0;i<news.length;i++){
+var getYearList = function (news) {
+    var yearList = [];
+    for (var i = 0; i < news.length; i++) {
         yearList.push(news[i].year);
     }
-    return yearList.sort().filter(function(el,i,a){return i==a.indexOf(el);}).reverse();
+    return yearList.sort().filter(function (el, i, a) { return i == a.indexOf(el); }).reverse();
 };
 
 var kauValley = angular.module('kauValley', ['angular-flexslider']);
@@ -67,50 +67,35 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
         'title': 'CEO',
         'url': 'images/profile.jpg',
         'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
-    }, {
-            'name': '李雷',
-            'title': 'CEO',
-            'url': 'images/profile.jpg',
-            'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
-        }];
+    }];
 
     $scope.leaders = [{
-        'name': '韩梅梅',
+        'name': '韩梅梅0',
         'title': '项目主管',
         'url': 'images/profile.jpg',
         'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
     }, {
-            'name': '韩梅梅',
+            'name': '韩梅梅1',
             'title': '项目主管',
             'url': 'images/profile.jpg',
             'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }, {
-            'name': '韩梅梅',
+            'name': '韩梅梅2',
             'title': '项目主管',
             'url': 'images/profile.jpg',
             'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }, {
-            'name': '韩梅梅',
+            'name': '韩梅梅3',
             'title': '项目主管',
             'url': 'images/profile.jpg',
             'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }, {
-            'name': '韩梅梅',
+            'name': '韩梅梅4',
             'title': '项目主管',
             'url': 'images/profile.jpg',
             'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }, {
-            'name': '韩梅梅',
-            'title': '项目主管',
-            'url': 'images/profile.jpg',
-            'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
-        }, {
-            'name': '韩梅梅',
-            'title': '项目主管',
-            'url': 'images/profile.jpg',
-            'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
-        }, {
-            'name': '韩梅梅',
+            'name': '韩梅梅5',
             'title': '项目主管',
             'url': 'images/profile.jpg',
             'detail': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
@@ -189,11 +174,14 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
             'content': '夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。'
         }
     ];
-    
-    $scope.year=getYear($scope.news);
-    $scope.yearList=getYearList($scope.news);
-    $scope.selectYear=function(y){
-        $scope.year=y;
+
+    $scope.year = getYear($scope.news);
+    $scope.yearList = getYearList($scope.news);
+    $scope.selectYear = function (y) {
+        $scope.year = y;
+    };
+    $scope.getNumber = function (num) {
+        return new Array(Math.floor( num ));
     };
 });
 
@@ -216,4 +204,12 @@ kauValley.directive('galleryDirective', function () {
             }
         });
     };
+});
+
+kauValley.filter('modulo', function(){
+  return function (arr, div, val) {
+      return arr.filter(function(item, index){
+          return index % div === (val || 0);
+      })
+  };
 });

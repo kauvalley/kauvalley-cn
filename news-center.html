@@ -79,18 +79,19 @@
                 <b ng-if="y==year">{{y}}</b>
             </span>
         </div>
+        <div id='news'></div>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2" id="newslist" role="tablist" aria-multiselectable="false">
                 <div class="row newsitemtop"></div>
                 <div ng-repeat="n in news | filter:{year:year} | orderBy:'-date'" class="row newsitem">
                     <span class="newsbullet animated fadeInDown"></span>
-                    <div class="col-md-2 col-sm-12 newstime animated fadeInDown" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{$index}}" aria-expanded="false" aria-controls="{{$index}}">
+                    <div class="col-md-2 col-sm-12 newstime animated fadeInDown" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{'news'+$index}}" aria-expanded="false" aria-controls="{{'news'+$index}}">
                         <h4>{{n.year}}-{{n.date}}</h4>
                     </div>
-                    <div class="col-md-10 col-sm-12 newstitle animated fadeInDown" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{$index}}" aria-expanded="false" aria-controls="{{$index}}">
+                    <div class="col-md-10 col-sm-12 newstitle animated fadeInDown" role="button" data-toggle="collapse" data-parent="#newslist" href="#{{'news'+$index}}" aria-expanded="false" aria-controls="{{'news'+$index}}">
                         <h4>{{n.title}}</h4>
                     </div>
-                    <div class="col-sm-12 col-md-10 col-md-offset-2 newscontent collapse" id="{{$index}}">
+                    <div class="col-sm-12 col-md-10 col-md-offset-2 newscontent collapse" id="{{'news'+$index}}">
                         <p>{{n.content}}</p>
                     </div>
                 </div>
@@ -99,7 +100,7 @@
         </div>
         <div class="row center">
             <span ng-repeat="y in yearList" class="yearlist" ng-click="selectYear(y);">
-                <a ng-if="y!=year">{{y}}</a>
+                <a ng-if="y!=year" href="#news">{{y}}</a>
                 <b ng-if="y==year">{{y}}</b>
             </span>
         </div>
@@ -168,6 +169,19 @@
                 $('.navbar-brand').addClass( "sm" );
                 $('.navbar-header').css('margin-top','-35px');
             }
+        });
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </body>
