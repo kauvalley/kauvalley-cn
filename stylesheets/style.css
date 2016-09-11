@@ -254,15 +254,13 @@ a.social-icon {
     border-top: none;
 }
 
-
-
 .progress {
   position: relative;
   height: 4px;
   display: block;
   width: 100%;
   background-color: #DEC29A;
-  border-radius: 2px;
+  border-radius: 0;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
 }
@@ -531,7 +529,7 @@ span.yearlist:not(:first-child)::before {
 .leader-detail{
     max-height:0;
     opacity: 0;
-    transition-duration: 1.5s;
+    transition-duration: 2s;
 }
 .leader-detail p{
     padding-top:20px;

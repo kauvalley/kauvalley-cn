@@ -202,6 +202,7 @@
     <script src="javascripts/angular.min.js"></script>
     <script src="javascripts/jquery.flexslider-min.js"></script>
     <script src="javascripts/angular-flexslider.js"></script>
+    <script src="javascripts/info.js"></script>
     <script src="javascripts/app.js"></script>
     <script>
         $(window).scroll(function(event) {
@@ -228,7 +229,7 @@
             });
         });
         window.onload = function(){
-            $('.progress').remove();
+            setTimeout(function(){$('.progress').remove();},2000);
         };
     </script>
 </body>
