@@ -529,11 +529,13 @@ span.yearlist:not(:first-child)::before {
     padding-bottom:20px;
 }
 .leader-detail{
-    padding-top:20px;
-    padding-bottom:20px;
     max-height:0;
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
+}
+.leader-detail p{
+    padding-top:20px;
+    padding-bottom:20px;
 }
 .leader-card:hover{
     padding-top:19px;
