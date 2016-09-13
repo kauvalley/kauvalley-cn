@@ -94,6 +94,10 @@
 
     <div class="container-fluid" style="padding-top:0;overflow-x:hidden;">
         <div style="height:100vh;margin-left:-20px;margin-right:-20px;background-image: url('images/0.jpg');background-size: cover;background-position: center top;">
+            <svg id="downarrow" style="width:100px;height:72px;position:absolute;left:50%;margin-left:-60px;bottom:20px;transition-duration:1s;">
+				<path d="M0 0 L50 32 L100 0" style="stroke:#fff;fill:transparent;stroke-width:2px;animation:arrow 2s infinite;-webkit-animation:arrow 2s infinite;animation-delay:-1s;-webkit-animation-delay:-1s;"></path>
+    			<path d="M0 20 L50 52 L100 20" style="stroke:#fff;fill:transparent;stroke-width:2px;animation:arrow 2s infinite;-webkit-animation:arrow 2s infinite;animation-delay:-0.5s;-webkit-animation-delay:-0.5s;"></path>
+			</svg>
         </div>
 
         <div class="row"></div>
@@ -257,6 +261,9 @@
         };
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
+            if (scroll > 200) {
+                $('#downarrow').attr('opacity',0);
+            }
             if (scroll <= $(window).height() - 200) {
                 $('.navbar').addClass( "navbar-index" );
                 $('.navbar img').attr('src','images/KauValley-Logo-white.png');

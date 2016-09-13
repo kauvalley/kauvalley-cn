@@ -556,3 +556,19 @@ span.yearlist:not(:first-child)::before {
         border: none;
     }
 }
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:.8}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:.8}
+80% {opacity:0}
+100% {opacity:0}
+}
