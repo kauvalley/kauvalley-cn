@@ -428,11 +428,21 @@ div.loading>div{
 #kau-coffee,
 #tea,
 #orchard,
-#news { 
+#news,
+#next{ 
     display: block;
     position: relative;
-    top: -160px;
+    top: -140px;
     visibility: hidden;
+}
+@media (max-width: 768px) {
+  #kau-coffee,
+  #tea,
+  #orchard,
+  #news,
+  #next { 
+      top: -100px;
+  }
 }
 #carousel-generic{
     display: block;
@@ -571,4 +581,60 @@ span.yearlist:not(:first-child)::before {
 40% {opacity:.8}
 80% {opacity:0}
 100% {opacity:0}
+}
+.agriculture p,
+.agriculture h1,
+.agriculture h4,
+.agriculture h5,
+.agriculture a{
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+.agriculture > div.row{
+    padding-top:20vh;
+  position: relative;
+}
+
+.agriculture > div.areaimage-lg,
+.agriculture > div.areaimage-sm{
+    padding-top:0;
+    padding-bottom:0;
+    background-color: #8bc63e;
+}
+.agriculture > div.areaimage-lg > img{
+    height: 100%;
+    width: 100%;
+}
+.agriculture > div.areaimage-lg > h5,
+.agriculture > div.areaimage-sm > h5{
+  text-shadow: 0 0 4px black;
+  -webkit-text-shadow: 0 0 4px black;
+  cursor: default;
+}
+.agriculture > div.areaimage-lg > h4,
+.agriculture > div.areaimage-sm > h4{
+  text-shadow: 0 0 4px black;
+  -webkit-text-shadow: 0 0 4px black;
+  transition-duration: .5s;
+}
+.agriculture > div.areaimage-lg > h4:hover,
+.agriculture > div.areaimage-sm > h4:hover{
+  transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  text-shadow: 0 0 10px black;
+  -webkit-text-shadow: 0 0 10px black;
+}
+.backcover{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  opacity: .3;
+  background-color:black;
+  transition-duration: 2s;
+}
+.backcover:hover{
+  opacity: 0;
 }

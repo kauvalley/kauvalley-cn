@@ -70,7 +70,7 @@
                                 </li>
                                 <li><a href="agriculture.html#tea">茶</a>
                                 </li>
-                                <li><a href="agriculture.html#orchard">果园</a>
+                                <li><a href="agriculture.html#orchard">百花百果苑</a>
                                 </li>
                             </ul>
                         </li>
@@ -94,12 +94,15 @@
 
     <div class="container-fluid" style="padding-top:0;overflow-x:hidden;">
         <div style="height:100vh;margin-left:-20px;margin-right:-20px;background-image: url('images/0.jpg');background-size: cover;background-position: center top;">
+          <a href="#next">
             <svg id="downarrow" style="width:100px;height:72px;position:absolute;left:50%;margin-left:-60px;bottom:20px;transition-duration:1s;">
 				<path d="M0 0 L50 32 L100 0" style="stroke:#fff;fill:transparent;stroke-width:2px;animation:arrow 2s infinite;-webkit-animation:arrow 2s infinite;animation-delay:-1s;-webkit-animation-delay:-1s;"></path>
     			<path d="M0 20 L50 52 L100 20" style="stroke:#fff;fill:transparent;stroke-width:2px;animation:arrow 2s infinite;-webkit-animation:arrow 2s infinite;animation-delay:-0.5s;-webkit-animation-delay:-0.5s;"></path>
 			</svg>
+          </a>
+          
         </div>
-
+        <div id="next"></div>
         <div class="row"></div>
 
         <div class="row">
@@ -272,13 +275,26 @@
                 $('.navbar img').attr('src','images/KauValley-Logo.png');
             }
 
-            if (scroll <= $(window).height() - 140) {
+            if (scroll <= $(window).height() - 180) {
                 $('.navbar-brand.sm').removeClass( "sm" );
                 $('.navbar-header').css('margin-top','0');
             } else {
                 $('.navbar-brand').addClass( "sm" );
                 $('.navbar-header').css('margin-top','-35px');
             }
+        });
+      $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </body>
