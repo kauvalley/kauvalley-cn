@@ -264,9 +264,6 @@
         };
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
-            if (scroll > 200) {
-                $('#downarrow').attr('opacity',0);
-            }
             if (scroll <= $(window).height() - 200) {
                 $('.navbar').addClass( "navbar-index" );
                 $('.navbar img').attr('src','images/KauValley-Logo-white.png');
@@ -275,7 +272,7 @@
                 $('.navbar img').attr('src','images/KauValley-Logo.png');
             }
 
-            if (scroll <= $(window).height() - 180) {
+            if (scroll < $(window).height() - 140) {
                 $('.navbar-brand.sm').removeClass( "sm" );
                 $('.navbar-header').css('margin-top','0');
             } else {
