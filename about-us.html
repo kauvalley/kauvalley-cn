@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>卡乌山谷 ∙ KA`U VALLEY</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
@@ -76,7 +80,7 @@
 
     <div class="container-fluid">
 
-        <div class="row" style="height:60vh;background-image: url('images/shakehands.jpg');background-size:cover;background-position:bottom;">
+        <div class="row" style="height:60vh;background-image: url('images/25.jpg');background-size:cover;background-position:center;">
         </div>
         <div class="row"></div>
         <div class="row">
@@ -132,6 +136,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="row">
+                <h1 class="center">社会责任</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-sm-4" ng-repeat="idx in [0,1,2]">
+                            <div class="row sponsored-card" ng-repeat="s in sponsored" ng-if="$index%3===idx">
+                                <div class="col-sm-12">
+                                    <div style="max-width:200px;margin: auto;">
+                                        <h3 class="center">{{s.name}}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <footer>
         <div class="container-fluid">

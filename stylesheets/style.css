@@ -16,6 +16,7 @@
 p,
 table {
     font-family: 'Cormorant Infant', serif;
+    line-height:170%
 }
 h1 {
     font-style: bold;
@@ -459,6 +460,8 @@ span.yearlist{
     background-color:white;
     z-index:2;
     font-size: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 span.yearlist a{
     color:#7C6A55;
@@ -566,7 +569,10 @@ span.yearlist:not(:first-child)::before {
         border: none;
     }
 }
-
+.sponsored-card{
+    padding-top:20px;
+    padding-bottom:20px;
+}
 @keyframes arrow
 {
 0% {opacity:0}
@@ -637,4 +643,14 @@ span.yearlist:not(:first-child)::before {
 }
 .backcover:hover{
   opacity: 0;
+}
+#top-link-block.affix-top {
+    position: absolute;
+    bottom: -80px;
+    right: 10px;
+}
+#top-link-block.affix {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
 }

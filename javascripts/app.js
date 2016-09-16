@@ -29,11 +29,15 @@ kauValley.controller('kauValleyController', function kauValleyController($scope,
     $scope.gallery = gallery;
     $scope.bosses = bosses;
     $scope.leaders = leaders;
+    $scope.sponsored = sponsored;
     $scope.news = news;
     $scope.year = getYear(news);
     $scope.yearList = getYearList(news);
     $scope.selectYear = function (y) {
         $scope.year = y;
+        $('html, body').animate({
+            scrollTop: 500
+            }, 500);
     };
 });
 

@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>卡乌山谷 ∙ KA`U VALLEY</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
@@ -126,31 +130,12 @@
         </div>
 
         <div class="row slide">
-            <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/2.jpg');background-size:cover;background-position:center center;">
-                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/3.jpg');background-size:cover;background-position:center center;">
-                </div>
-                <div class="row" style="height:30%;"></div>
-                <div class="row">
-                    <h1 class="center">标题</h1>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                        <p>
-                            夏威夷岛是夏威夷群岛中的最大岛屿。
-                        </p>
-                    </div>
-                </div>
-                <div class="row center">
-                    <a class="btn btn-default" href="#" role="button">更多</a>
-                </div>
-            </div>
-
             <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/4.jpg');background-size:cover;background-position:center center;">
-                <div class="slide-down" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/5.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/1.jpg');background-size:cover;background-position:center center;">
                 </div>
                 <div class="row" style="height:30%;"></div>
                 <div class="row">
-                    <h1 class="center">标题</h1>
+                    <h1 class="center">山海农业</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
@@ -160,16 +145,16 @@
                     </div>
                 </div>
                 <div class="row center">
-                    <a class="btn btn-default" href="#" role="button">更多</a>
+                    <a class="btn btn-default" href="agriculture.html" role="button">更多</a>
                 </div>
             </div>
 
-            <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/6.jpg');background-size:cover;background-position:center center;">
-                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/0.jpg');background-size:cover;background-position:center center;">
+            <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/14.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-down" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/6.jpg');background-size:cover;background-position:center center;">
                 </div>
                 <div class="row" style="height:30%;"></div>
                 <div class="row">
-                    <h1 class="center">标题</h1>
+                    <h1 class="center">特色农旅</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
@@ -179,7 +164,26 @@
                     </div>
                 </div>
                 <div class="row center">
-                    <a class="btn btn-default" href="#" role="button">更多</a>
+                    <a class="btn btn-default" href="agri-tourism.html" role="button">更多</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/3.jpg');background-size:cover;background-position:center center;">
+                <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/5.jpg');background-size:cover;background-position:center center;">
+                </div>
+                <div class="row" style="height:30%;"></div>
+                <div class="row">
+                    <h1 class="center">庄园体验</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <p>
+                            夏威夷岛是夏威夷群岛中的最大岛屿。
+                        </p>
+                    </div>
+                </div>
+                <div class="row center">
+                    <a class="btn btn-default" href="experience.html" role="button">更多</a>
                 </div>
             </div>
 
@@ -264,6 +268,12 @@
         };
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
+            if (scroll > 200) {
+                $('#downarrow').attr('opacity',0);
+            }
+            else{
+                $('#downarrow').attr('opacity',1);
+            }
             if (scroll <= $(window).height() - 200) {
                 $('.navbar').addClass( "navbar-index" );
                 $('.navbar img').attr('src','images/KauValley-Logo-white.png');
@@ -282,14 +292,12 @@
         });
       $(document).ready(function () {
             $("a").on('click', function (event) {
-                if (this.hash !== "") {
+                if (this.hash === "#next") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
+                    }, 800);
                 }
             });
         });
