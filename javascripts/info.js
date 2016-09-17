@@ -31,13 +31,17 @@ var contact = {
 };
 
 var gallery = [
-    'images/6.jpg',
     'images/9.jpg',
     'images/10.jpg',
     'images/26.jpg',
-    'images/27.jpg',
     'images/30.jpg',
-    'images/32.jpg'
+    'images/32.jpg',
+    'images/34.jpg',
+    'images/35.jpg',
+    'images/37.jpg',
+    'images/39.jpg',
+    'images/41.jpg',
+    'images/6.jpg'
 ];
 
 var bosses = [
