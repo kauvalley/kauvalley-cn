@@ -154,6 +154,6 @@ var news = [
 var sponsored = [
     {name:'Ka`u咖啡皇后选美大赛'},
     {name:'Ka`u社区医院医疗设备升级'},
-    {name:'慈善机构O Ka`u Ka’kau'},
+    {name:'慈善机构 O Ka`u Ka’kau'},
     {name:'社区共赢农业发展创业园'}
 ];

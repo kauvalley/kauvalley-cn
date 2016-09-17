@@ -85,13 +85,27 @@
         <div class="row"></div>
         <div class="row">
             <div class="row">
-                <h1 class="center">标题</h1>
+                <h1 class="center">社会责任</h1>
             </div>
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <p>
-                        夏威夷岛（夏威夷语：Hawaiʻi）是夏威夷群岛中的最大岛屿，又称大岛（Big Island）；位于群岛最南端，面积10414平方公里。全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，华人又称火山岛，是世界著名的活火山。
+                        卡乌山谷，在集天时地利于一身，大力开发农业旅游等项目，极大促进当地经济和就业的同时，将自身定位于Ka`u社区的一员，本着同呼吸，共命运的企业责任感，三年来，积极投身于夏威夷及当地社区的各项活动和赞助中。
                     </p>
+                    <p>
+                        参与包括但不限于以下项目：
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="row">
+                            <div class="col-sm-6 sponsored-card" ng-repeat="s in sponsored">
+                                <div class="col-sm-12">
+                                    <h4 class=""><i class="fa fa-pagelines" style="color:#0C6838;"></i>&nbsp;&nbsp;{{s.name}}</h4>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,37 +150,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <hr>
-        </div>
-
-        <div class="row">
-            <div class="row">
-                <h1 class="center">社会责任</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <p>
-                        卡乌山谷，在集天时地利于一身，大力开发农业旅游等项目，极大促进当地经济和就业的同时，将自身定位于Ka`u社区的一员，本着同呼吸，共命运的企业责任感，三年来，积极投身于夏威夷及当地社区的各项活动和赞助中。
-                    </p>
-                    <p>
-                        参与包括但不限于以下项目：
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <div class="row">
-                            <div class="col-sm-6 sponsored-card" ng-repeat="s in sponsored">
-                                <div class="col-sm-12">
-                                    <h3 class="center">{{s.name}}</h3>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
     </div>
     <footer>
