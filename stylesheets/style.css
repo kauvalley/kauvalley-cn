@@ -257,7 +257,7 @@ a.social-icon {
 
 .progress {
   position: relative;
-  height: 4px;
+  height: 2px;
   display: block;
   width: 100%;
   background-color: #DEC29A;
@@ -653,4 +653,8 @@ span.yearlist:not(:first-child)::before {
     position: fixed;
     bottom: 20px;
     right: 10px;
+}
+
+.flexslider-container .flex-viewport ul{
+    background-color:#222;
 }

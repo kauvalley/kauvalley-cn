@@ -31,13 +31,13 @@ var contact = {
 };
 
 var gallery = [
-    'images/0.jpg',
-    'images/1.jpg',
-    'images/2.jpg',
-    'images/3.jpg',
-    'images/4.jpg',
-    'images/5.jpg',
-    'images/6.jpg'
+    'images/6.jpg',
+    'images/9.jpg',
+    'images/10.jpg',
+    'images/26.jpg',
+    'images/27.jpg',
+    'images/30.jpg',
+    'images/32.jpg'
 ];
 
 var bosses = [
@@ -148,10 +148,8 @@ var news = [
 ];
 
 var sponsored = [
-    {name:'???'},
-    {name:'???'},
-    {name:'???'},
-    {name:'???'},
-    {name:'???'},
-    {name:'???'}
+    {name:'Ka`u咖啡皇后选美大赛'},
+    {name:'Ka`u社区医院医疗设备升级'},
+    {name:'慈善机构O Ka`u Ka’kau'},
+    {name:'社区共赢农业发展创业园'}
 ];
