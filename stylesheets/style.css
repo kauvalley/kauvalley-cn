@@ -658,3 +658,7 @@ span.yearlist:not(:first-child)::before {
 .flexslider-container .flex-viewport ul{
     background-color:#222;
 }
+
+#carousel-generic p{
+    text-indent: 0;
+}
