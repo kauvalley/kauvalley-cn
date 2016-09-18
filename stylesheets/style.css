@@ -10,12 +10,8 @@
   font-weight: 400;
   src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(../fonts/Roboto-Condensed.woff) format('woff');
 }
-* {
-    font-family: 'Roboto Condensed', sans-serif;
-}
 p,
 table {
-    font-family: 'Cormorant Infant', serif;
     line-height:170%
 }
 h1 {
