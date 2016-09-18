@@ -27,7 +27,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="navbar-brand">
-                    <a href="index.html"><img class="img-responsive" style="margin:auto;" src='images/KauValley-Logo.png'>
+                    <a href="index.html"><img class="img-responsive" style="margin:auto;" src='images/KauValley-Logo.png' draggable="false">
                     </a>
                 </div>
             </div>
@@ -80,7 +80,7 @@
 
     <div class="container-fluid">
 
-        <div class="row" style="height:60vh;background-image: url('images/25.jpg');background-size:cover;background-position:center;">
+        <div class="row" style="height:400px;background-image: url('images/25.jpg');background-size:cover;background-position:center;">
         </div>
         <div class="row"></div>
         <div class="row">
@@ -117,7 +117,7 @@
             <div class="row" ng-repeat="b in bosses">
                 <div class="col-sm-3 col-sm-offset-2">
                     <div style="max-width:250px;margin: auto;">
-                        <img class="img-responsive" ng-src="{{b.url}}">
+                        <img class="img-responsive" ng-src="{{b.url}}" draggable="false">
                         <h3>{{b.name}}</h3>
                         <h4>{{b.title}}</h4>
                     </div>
@@ -136,7 +136,7 @@
                         <div class="row leader-card" ng-repeat="l in leaders" ng-if="$index%3===idx">
                             <div class="col-sm-12">
                                 <div style="max-width:200px;margin: auto;">
-                                    <img class="img-responsive" ng-src="{{l.url}}">
+                                    <img class="img-responsive" ng-src="{{l.url}}" draggable="false">
                                     <h3>{{l.name}}</h3>
                                     <h4>{{l.title}}</h4>
                                 </div>

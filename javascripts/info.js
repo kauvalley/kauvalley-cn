@@ -31,7 +31,6 @@ var contact = {
 };
 
 var gallery = [
-    'images/9.jpg',
     'images/10.jpg',
     'images/26.jpg',
     'images/30.jpg',

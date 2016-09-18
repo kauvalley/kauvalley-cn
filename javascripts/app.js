@@ -3,6 +3,7 @@ $('ul.nav li.dropdown').hover(
         $('.dropdown-toggle').dropdown('toggle');
     }
 );
+$('img').contextmenu(function() {return false;});
 
 var getYear = function (news) {
     var maxi = 0;

@@ -18,6 +18,13 @@ table {
     font-family: 'Cormorant Infant','Hiragino Sans GB','Microsoft YaHei', serif;
     line-height:170%
 }
+img{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+}
 h1 {
     font-style: bold;
     text-transform: capitalize;
@@ -48,8 +55,8 @@ li.dropdown>ul.dropdown-menu {
     border-radius: 0;
     animation-duration: .5s;
     -webkit-animation-duration: .5s;
-    
 }
+
 .navbar {
     position: fixed;
     top:0;
@@ -116,7 +123,31 @@ li.dropdown>ul.dropdown-menu {
     background-color: rgba(255, 255, 255, .1);
     border-style: outset;
 }
-
+@media (max-width: 768px){
+    li.dropdown>ul.dropdown-menu a{
+        text-align: center;
+        margin-left:-10px;
+    }
+    .carousel-caption h3{
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 0 0 10px black;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow: 0 0 10px black;
+    }
+    a.carousel-control,
+    a.carousel-control>span.glyphicon{
+        opacity: .8;
+    }
+    .carousel-indicators{
+        transform: scale(.5,.5);
+    }
+}
 hr {
     border: 0;
     height: 1px;
@@ -510,13 +541,10 @@ span.yearlist:not(:first-child)::before {
 }
 .newsbullet{
     position: absolute;
-    font-size:20px;
-    left:-7px;
-    top:4px;
+    font-size:12px;
+    left:-6px;
+    top:13px;
     height:39px;
-}
-.newsbullet::after{
-    content:'●';
 }
 .newsitem:hover .newstime,
 .newsitem:hover .newstitle,
@@ -661,4 +689,19 @@ span.yearlist:not(:first-child)::before {
 
 #carousel-generic p{
     text-indent: 0;
+}
+
+div.row.flex-slider-row{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0;
+    padding-right:0;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
+}
+.flexslider{
+    background-color: transparent;
 }

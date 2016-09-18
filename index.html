@@ -36,7 +36,7 @@
 <body class="animated fadeIn" style="animation-delay:.5s;" ng-controller="kauValleyController">
     <div class="loading" style="position:fixed;height:100vh;width:100%;background-color:white;background-image: url('images/0white.jpg');background-size: cover;background-position: center top;z-index:100;transition-duration:2s;">
         <div class="animated fadeIn" style="animation-duration:1s;padding-top:15px;margin-top:30vh;height:150px;display:inline-block;width:100%;text-align:center;transition-duration:2s;">
-            <img class="img-responsive" style="height:100%;margin:auto;" src='images/KauValley-Logo-white.png'>
+            <img class="img-responsive" style="height:100%;margin:auto;" src='images/KauValley-Logo-white.png' draggable="false">
             <div class="progress" style="width:100%;margin:auto;position:absolute;top:0;">
                 <div class="indeterminate"></div>
             </div>
@@ -47,7 +47,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="navbar-brand">
-                    <a href="index.html"><img class="img-responsive" style="margin:auto;" src='images/KauValley-Logo-white.png'>
+                    <a href="index.html"><img class="img-responsive" style="margin:auto;" src='images/KauValley-Logo-white.png' draggable="false">
                     </a>
                 </div>
             </div>
@@ -133,7 +133,7 @@
             <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/4.jpg');background-size:cover;background-position:center center;">
                 <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/36.jpg');background-size:cover;background-position:center center;">
                 </div>
-                <div class="row" style="height:30%;"></div>
+                <div class="row" style="height:35%;"></div>
                 <div class="row">
                     <h1 class="center">山海农业</h1>
                     <h2 class="center">AGRICULTURE</h2>
@@ -146,7 +146,7 @@
             <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/14.jpg');background-size:cover;background-position:center center;">
                 <div class="slide-down" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/28.jpg');background-size:cover;background-position:center center;">
                 </div>
-                <div class="row" style="height:30%;"></div>
+                <div class="row" style="height:35%;"></div>
                 <div class="row">
                     <h1 class="center">特色农旅</h1>
                     <h2 class="center">AGRI-TOURISM</h2>
@@ -160,7 +160,7 @@
             <div class="col-sm-4 slide-item" style="height:666px;background-image: url('images/42.jpg');background-size:cover;background-position:center center;">
                 <div class="slide-up" style="position: absolute; height:50%; left:0; right:0;background-image: url('images/40.jpg');background-size:cover;background-position:center center;">
                 </div>
-                <div class="row" style="height:30%;"></div>
+                <div class="row" style="height:35%;"></div>
                 <div class="row">
                     <h1 class="center">庄园体验</h1>
                     <h2 class="center">MANSION EXPERIENCE</h2>
@@ -254,7 +254,7 @@
         };
         $(window).scroll(function(event) {
             var scroll = $(window).scrollTop();
-            if (scroll > 200) {
+            if (scroll > 100) {
                 $('#downarrow').attr('opacity',0);
             }
             else{
